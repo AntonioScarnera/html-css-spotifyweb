@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -17,15 +23,61 @@
 
             </aside>
             <main>
-                <div class="upgrade">
-                    
+                <div class="upgrade flex-container">
+                    <div class="top-btn">
+                        Effettua l'upgrade
+                    </div>
                 </div>
             </main>
 
         </div>
         <footer>
-            <nav>
+            <nav class="bot-navbar flex-container">
+                <div class="music-container flex-container">
+                    <div class="music-img">
+                        <img src="img/sinister.jpeg">
+                    </div>
+                    <div class="music-info">
+                        <span class="music-info-title">Sinister</span>
+                        <p>Brano Nome</p>
+                    </div>
+                    <div class="music-icon">
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-folder"></i>
+                        </span>
+                    </div>
+                </div>
+                
 
+                <div>
+                    <div class="music-button">
+                        <ul>
+                            <li><i class="fa-solid fa-shuffle"></i></li>
+                            <li><i class="fa-solid fa-backward-step"></i></li>
+                            <li><i class="fa-regular fa-circle-play"></i></li>
+                            <li><i class="fa-solid fa-forward-step"></i></li>
+                            <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
+                        </ul>
+                    </div>
+                    <div class="music-bar">
+                        <span>0:25</span>
+                        <input class="music-bar-time" type="range" value="20"/>
+                        <span>4:35</span>
+                    </div>
+                </div>
+
+
+                <div class="music-manager">
+                    <ul>
+                        <li><i class="fa-solid fa-list"></i></li>
+                        <li><i class="fa-solid fa-desktop"></i></li>
+                        <li><i class="fa-solid fa-volume-high"></i></li>
+                        <li><input class="volume" type="range" value="20"></li>
+                    </ul>
+                </div>
             </nav>
         </footer>
     </div>
