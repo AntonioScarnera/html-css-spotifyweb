@@ -452,6 +452,9 @@ input[type="range"]::-ms-track {
 .main-playlist p:hover, .main-playlist h3:hover{
     text-decoration: underline;
 }
+.main-playlist h3{
+    font-size: 15px;
+}
 .main-playlist p{
     padding-top: 10px;
     font-size: 14px;
@@ -502,6 +505,22 @@ input[type="range"]::-ms-track {
 
 
 
+@media screen and (max-width: 1400px){
+    
+}
+@media screen and (max-width: 1200px){
+    
+}
+@media screen and (max-width: 992px){
+    .main-playlist{
+        width: calc(100% / 4 - 30px);
+    }
+}
+@media screen and (max-width: 768px){
+    .main-playlist{
+        width: calc(100% / 2 - 20px);
+    }
+}
 @media screen and (max-width: 576px){
     .app-nav ul li span, .playlist-title, .playlist, .install span p, .profile-info p{
         display: none;
@@ -548,19 +567,7 @@ input[type="range"]::-ms-track {
     .upgrade{
         width: calc(100% - 50px);
     }
-}
-@media screen and (min-width: 576px){
-    
-}
-@media screen and (min-width: 768px){
-    
-}
-@media screen and (min-width: 992px){
-    
-}
-@media screen and (min-width: 1200px){
-    
-}
-@media screen and (min-width: 1400px){
-    
+    .main-playlist{
+        width: calc(100% / 2 - 20px);
+    }
 }
