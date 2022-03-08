@@ -119,10 +119,17 @@ footer{
     color: gray;
     cursor: pointer;
 }
+.music-info p:hover, .music-info span:hover{
+    color: white;
+    text-decoration: underline;
+}
 .music-icon{
     color: grey;
     margin-left: 2vw;
     cursor: pointer;
+}
+.music-icon i:hover{
+    color: white;
 }
 .music-icon span{
     font-size: 17px;
@@ -138,6 +145,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.music-button ul li i:hover{
+    color: greenyellow;
+}
+.music-manager ul li i:hover{
+    color: greenyellow;
+    cursor: pointer;
 }
 .music-button ul li{
     cursor: pointer;
@@ -263,9 +277,11 @@ input[type="range"]::-ms-track {
     padding-left: 10px;
     margin-left: -10px;
     cursor: pointer;
+    color: grey;
 }
 .app-nav ul li:hover{
     border-left: 2px solid greenyellow;
+    color: white;
 }
 .app-nav ul li i{
     font-size: 15px;
@@ -300,6 +316,7 @@ input[type="range"]::-ms-track {
     font-size: 10px;
     padding-left: 10px;
     cursor: pointer;
+    color: grey;
 }
 .plus i{
     font-size: 12px;
@@ -311,6 +328,7 @@ input[type="range"]::-ms-track {
     list-style-type: none;
     font-size: 10px;
     cursor: pointer;
+    color: grey;
 }
 .playlist ul{
     height: 25vh;
@@ -324,6 +342,7 @@ input[type="range"]::-ms-track {
 }
 .install span p{
     display: inline-block;
+    color: grey;
 }
 .install span{
     font-size: 14px;
@@ -345,6 +364,7 @@ input[type="range"]::-ms-track {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    color: grey;
 }
 .profile-logo{
     display: flex;
@@ -355,8 +375,8 @@ input[type="range"]::-ms-track {
     border-radius: 50%;
     background-color: grey;
 }
-.playlist ul li:hover, .install span p:hover, .profile-info p:hover, .plus-text:hover{
-    text-decoration: underline;
+.playlist ul li:hover, .install span:hover, .profile-info :hover, .plus-text:hover{
+    color: white;
 }
 
 /* main container */
@@ -390,6 +410,9 @@ input[type="range"]::-ms-track {
     background-color: greenyellow;
     visibility: hidden;
 }
+.main-navbar ul li:hover{
+    color: white;
+}
 .main-navbar ul li:hover hr{
     visibility: visible;
 }
@@ -413,11 +436,21 @@ input[type="range"]::-ms-track {
 .main-playlist{
     width: calc(100% / 6.5 - 20px);
 }
+.main-img-container{
+    position: relative;
+}
 .main-playlist img{
     width: 100%;
+    cursor: pointer;
+    
+
 }
 .main-playlist h3, .main-playlist p{
     text-align: center;
+    cursor: pointer;
+}
+.main-playlist p:hover, .main-playlist h3:hover{
+    text-decoration: underline;
 }
 .main-playlist p{
     padding-top: 10px;
@@ -428,6 +461,43 @@ input[type="range"]::-ms-track {
     border: 0;
     border-radius: 50%;
     object-fit: cover;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00000056;
+}
+.circle-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00000056;
+}
+.main-img-container:hover .overlay, .main-img-container:hover .circle-overlay{
+    opacity: 1;
+    cursor: pointer;
 }
 
 
