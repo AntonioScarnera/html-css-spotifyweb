@@ -12,6 +12,7 @@
 body{
     color: white;
     font-family: 'Roboto', sans-serif;
+    background-color: black;
 }
 .clearfix{
     content: "";
@@ -37,6 +38,7 @@ body{
 .wrapper{
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 .wrapper-container{
     display: flex;
@@ -66,7 +68,7 @@ main{
     justify-content: flex-end;
 }
 footer{
-    height: 100px;
+    height: 90px;
     width: 100%;
     background-color: #282828;
     position: fixed;
@@ -243,6 +245,7 @@ input[type="range"]::-ms-track {
 /* aside */
 .app-bar{
     padding: 20px;
+    min-height: 0;
 }
 .logo img{
     width: 120px;
@@ -311,6 +314,7 @@ input[type="range"]::-ms-track {
 .profile{
     height: 100px;
     padding: 0 10px;
+    background-color: black;
 }
 .install span p{
     display: inline-block;
@@ -329,6 +333,11 @@ input[type="range"]::-ms-track {
 .profile-logo img{
     width: 15px;
 }
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .profile-logo{
     display: flex;
     justify-content: center;
@@ -337,4 +346,30 @@ input[type="range"]::-ms-track {
     height: 22px;
     border-radius: 50%;
     background-color: grey;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    
+}
+@media screen and (min-width: 576px){
+    
+}
+@media screen and (min-width: 768px){
+    
+}
+@media screen and (min-width: 992px){
+    
+}
+@media screen and (min-width: 1200px){
+    
+}
+@media screen and (min-width: 1400px){
+    
 }
