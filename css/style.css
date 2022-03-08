@@ -55,7 +55,7 @@ aside{
 }
 main{
     width: calc(100% - 230px);
-    padding-top: 90px;
+    padding-top: 100px;
     background-color: #141922;
 }
 .upgrade{
@@ -75,7 +75,6 @@ footer{
     bottom: 0;
     left: 0;
 }
-
 
 /* barra trasparente */
 .top-btn{
@@ -300,14 +299,18 @@ input[type="range"]::-ms-track {
 .plus-text{
     font-size: 10px;
     padding-left: 10px;
+    cursor: pointer;
 }
 .plus i{
     font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
 }
 .playlist ul li{
     padding-top: 10px;
     list-style-type: none;
     font-size: 10px;
+    cursor: pointer;
 }
 .playlist ul{
     height: 25vh;
@@ -325,6 +328,7 @@ input[type="range"]::-ms-track {
 .install span{
     font-size: 14px;
     color: grey;
+    cursor: pointer;
 }
 .install{
     padding: 10px 0;
@@ -340,6 +344,7 @@ input[type="range"]::-ms-track {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 .profile-logo{
     display: flex;
@@ -350,17 +355,94 @@ input[type="range"]::-ms-track {
     border-radius: 50%;
     background-color: grey;
 }
+.playlist ul li:hover, .install span p:hover, .profile-info p:hover, .plus-text:hover{
+    text-decoration: underline;
+}
 
-
-
-
-
+/* main container */
+.main-container{
+    overflow-y: scroll;
+    height: 100%;
+}
+.main-navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+.main-navbar ul li{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: grey;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.main-content{
+    margin-bottom: 50px;
+}
+.main-navbar ul li hr{
+    width: 35px;
+    margin-top: 10px;
+    background-color: greenyellow;
+    visibility: hidden;
+}
+.main-navbar ul li:hover hr{
+    visibility: visible;
+}
+.main-title{
+    margin-left: 15px;
+}
+.main-title p{
+    font-size: 10px;
+    color: grey;
+    margin-top: 5px;
+}
+.main-playlist-container{
+    margin: 0 15px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    flex-flow: row wrap;
+}
+.main-playlist{
+    width: calc(100% / 6.5 - 20px);
+}
+.main-playlist img{
+    width: 100%;
+}
+.main-playlist h3, .main-playlist p{
+    text-align: center;
+}
+.main-playlist p{
+    padding-top: 10px;
+    font-size: 14px;
+    color: grey;
+}
+.circle img{
+    border: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 
 
 @media screen and (max-width: 576px){
     .app-nav ul li span, .playlist-title, .playlist, .install span p, .profile-info p{
         display: none;
+    }
+    .music-manager ul{
+        text-align: center;
+    }
+    .profile{
+        height: 70px;
+        background-color: black;
+        margin-bottom: -10px;
     }
     .install{
         border: 0;
@@ -389,6 +471,12 @@ input[type="range"]::-ms-track {
     }
     .app-nav ul{
         padding-left: 10px;
+    }
+    main{
+        width: calc(100% - 50px);
+    }
+    .upgrade{
+        width: calc(100% - 50px);
     }
 }
 @media screen and (min-width: 576px){
