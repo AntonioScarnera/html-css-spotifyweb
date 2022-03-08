@@ -44,7 +44,11 @@ body{
     width: 100%;
 }
 aside{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
     width: 230px;
+    height: 100%;
     background-color: black;
 }
 main{
@@ -233,4 +237,104 @@ input[type="range"]::-ms-track {
   box-shadow: none;
   border: none;
   background: transparent;
+}
+
+
+/* aside */
+.app-bar{
+    padding: 20px;
+}
+.logo img{
+    width: 120px;
+    cursor: pointer;
+}
+.app-nav ul{
+    padding-top: 15px;
+
+}
+.app-nav ul li{
+    list-style-type: none;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.app-nav ul li:hover{
+    border-left: 2px solid greenyellow;
+}
+.app-nav ul li i{
+    font-size: 15px;
+}
+.app-nav ul li span{
+    font-size: 10px;
+}
+.playlist-title{
+    padding-top: 15px;
+}
+.playlist-title p{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+}
+.plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    color: black;
+}
+.plus-container{
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.plus-text{
+    font-size: 10px;
+    padding-left: 10px;
+}
+.plus i{
+    font-size: 12px;
+}
+.playlist ul li{
+    padding-top: 10px;
+    list-style-type: none;
+    font-size: 10px;
+}
+.playlist ul{
+    height: 25vh;
+    min-height: 15vh;
+    overflow-y: auto;
+}
+.profile{
+    height: 100px;
+    padding: 0 10px;
+}
+.install span p{
+    display: inline-block;
+}
+.install span{
+    font-size: 14px;
+    color: grey;
+}
+.install{
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+}
+.profile-info{
+    padding-top: 10px;
+}
+.profile-logo img{
+    width: 15px;
+}
+.profile-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: grey;
 }
