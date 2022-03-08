@@ -247,12 +247,15 @@ input[type="range"]::-ms-track {
     padding: 20px;
     min-height: 0;
 }
-.logo img{
-    width: 120px;
-    cursor: pointer;
+.logo{
+    width: 100px;
+    height: 50px;
+    background-image: url(../img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .app-nav ul{
-    padding-top: 15px;
+    padding-top: 10px;
 
 }
 .app-nav ul li{
@@ -356,7 +359,37 @@ input[type="range"]::-ms-track {
 
 
 @media screen and (max-width: 576px){
-    
+    .app-nav ul li span, .playlist-title, .playlist, .install span p, .profile-info p{
+        display: none;
+    }
+    .install{
+        border: 0;
+    }
+    .install span{
+        padding-left: 4px;
+    }
+    aside{
+        width: 50px;
+        padding: 10px;
+        align-items: center;
+    }
+    .logo{
+        width: 50px;
+        height: 25px;
+        background-image: url(../img/logo-small.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 5px;
+    }
+    .app-bar{
+        padding-left: 40px;
+    }
+    .app-nav ul li i{
+        font-size: 13px;
+    }
+    .app-nav ul{
+        padding-left: 10px;
+    }
 }
 @media screen and (min-width: 576px){
     
