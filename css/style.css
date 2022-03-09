@@ -74,6 +74,7 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+    min-width: 450px;
 }
 
 /* barra trasparente */
@@ -147,21 +148,23 @@ footer{
     align-items: center;
 }
 .music-button ul li i:hover{
-    color: greenyellow;
+    color: white;
 }
 .music-manager ul li i:hover{
     color: greenyellow;
     cursor: pointer;
 }
+
 .music-button ul li{
     cursor: pointer;
     list-style-type: none;
     display: inline-block;
     padding: 7px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    color: grey;
 }
 .fa-circle-play{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .music-bar span{
     font-size: 0.9em;
@@ -378,6 +381,10 @@ input[type="range"]::-ms-track {
 .playlist ul li:hover, .install span:hover, .profile-info :hover, .plus-text:hover{
     color: white;
 }
+.install span p:hover{
+    color: white;
+    text-decoration: underline;
+}
 
 /* main container */
 .main-container{
@@ -407,7 +414,7 @@ input[type="range"]::-ms-track {
 .main-navbar ul li hr{
     width: 35px;
     margin-top: 10px;
-    background-color: greenyellow;
+    border: 1px solid greenyellow;
     visibility: hidden;
 }
 .main-navbar ul li:hover{
